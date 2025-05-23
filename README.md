@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rediseño del Sitio Web UIDE
 
-## Getting Started
+Este proyecto es un rediseño moderno del sitio web oficial de la Universidad Internacional del Ecuador (UIDE), implementado con las últimas tecnologías web y siguiendo las mejores prácticas de diseño y desarrollo.
 
-First, run the development server:
+## Características Principales
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 🎨 Diseño moderno y responsive
+- ⚡ Rendimiento optimizado
+- 🔍 SEO mejorado
+- 🤖 Chatbot con IA para asistencia estudiantil
+- 📱 Adaptable a todos los dispositivos
+- ♿ Accesibilidad WCAG 2.2
+- 🌐 Internacionalización
+- 🔒 Seguridad mejorada
+
+## Tecnologías Utilizadas
+
+- **Frontend:**
+  - Next.js 14
+  - TypeScript
+  - Tailwind CSS
+  - Framer Motion (animaciones)
+  - React Query (gestión de estado)
+
+- **Backend:**
+  - Node.js
+  - Express
+  - Prisma (ORM)
+  - PostgreSQL
+
+- **CMS:**
+  - Strapi (headless CMS)
+
+- **Herramientas de Desarrollo:**
+  - ESLint
+  - Prettier
+  - Jest
+  - React Testing Library
+  - GitHub Actions (CI/CD)
+
+## Requisitos Previos
+
+- Node.js 18.x o superior
+- npm 9.x o superior
+- PostgreSQL 14.x o superior
+
+## Instalación
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/uide/website-redesign.git
+   cd website-redesign
+   ```
+
+2. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+
+3. Configurar variables de entorno:
+   ```bash
+   cp .env.example .env.local
+   ```
+   Editar `.env.local` con las configuraciones necesarias.
+
+4. Iniciar el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+## Estructura del Proyecto
+
+```
+src/
+├── app/                 # Rutas y páginas (App Router)
+├── components/          # Componentes reutilizables
+├── lib/                 # Utilidades y configuraciones
+├── styles/             # Estilos globales
+└── types/              # Definiciones de TypeScript
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts Disponibles
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev` - Inicia el servidor de desarrollo
+- `npm run build` - Construye la aplicación para producción
+- `npm run start` - Inicia la aplicación en modo producción
+- `npm run lint` - Ejecuta el linter
+- `npm run test` - Ejecuta las pruebas
+- `npm run format` - Formatea el código
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contribución
 
-## Learn More
+1. Fork el repositorio
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
-To learn more about Next.js, take a look at the following resources:
+## Licencia
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contacto
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Universidad Internacional del Ecuador
+- Email: info@uide.edu.ec
+- Teléfono: +593 2 398-9400
+- Dirección: Av. Simón Bolívar S/N, Quito, Ecuador
