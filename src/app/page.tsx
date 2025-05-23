@@ -9,7 +9,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/campus.jpg"
+            src="/next.svg"
             alt="Campus UIDE"
             fill
             className="object-cover opacity-20"
@@ -134,19 +134,19 @@ const news = [
   {
     title: "Nuevo programa de Ingeniería en IA",
     excerpt: "La UIDE lanza su nuevo programa de Ingeniería en Inteligencia Artificial, pionero en Ecuador.",
-    image: "/images/news/ai-program.jpg",
+    image: "/vercel.svg",
     link: "/noticias/nuevo-programa-ia"
   },
   {
     title: "Convenio con universidad europea",
     excerpt: "Firmamos un nuevo convenio de intercambio con la Universidad de Barcelona.",
-    image: "/images/news/partnership.jpg",
+    image: "/globe.svg",
     link: "/noticias/convenio-barcelona"
   },
   {
     title: "Ranking internacional",
     excerpt: "La UIDE se posiciona entre las mejores universidades de Latinoamérica.",
-    image: "/images/news/ranking.jpg",
+    image: "/next.svg",
     link: "/noticias/ranking-2024"
   }
 ] 
