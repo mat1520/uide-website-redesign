@@ -3,11 +3,6 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import dynamic from 'next/dynamic'
-
-const Chatbot = dynamic(() => import('@/components/Chatbot'), {
-  ssr: false,
-})
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,7 +23,6 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
           <Footer />
-          <Chatbot />
         </div>
       </body>
     </html>

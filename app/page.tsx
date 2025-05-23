@@ -1,6 +1,9 @@
-// Página de inicio UIDE
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+
+const Chatbot = dynamic(() => import('@/components/Chatbot'), { ssr: false })
 
 export default function Home() {
   return (
@@ -108,6 +111,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <Chatbot />
     </div>
   )
 }
