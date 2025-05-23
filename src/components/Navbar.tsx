@@ -23,7 +23,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo-uide.png"
+              src="https://www.uide.edu.ec/wp-content/uploads/2022/06/UIDE-R-web.png"
               alt="UIDE Logo"
               width={150}
               height={50}
