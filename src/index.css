@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+  
+  .hover-shine {
+    @apply relative overflow-hidden;
+  }
+  
+  .hover-shine::after {
+    content: '';
+    @apply absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent;
+    animation: shine 1.5s infinite;
+  }
+  
+  @keyframes shine {
+    100% {
+      @apply translate-x-full;
+    }
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s cubic-bezier(0.4,0,0.2,1) both;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: none; }
+  }
+  .shadow-uide-lg {
+    box-shadow: 0 8px 32px 0 rgba(0, 32, 91, 0.12), 0 1.5px 6px 0 rgba(0,0,0,0.08);
+  }
+  .shadow-uide-xl {
+    box-shadow: 0 16px 48px 0 rgba(0, 32, 91, 0.18), 0 2px 8px 0 rgba(0,0,0,0.10);
+  }
+  .shadow-uide {
+    box-shadow: 0 2px 8px 0 rgba(0, 32, 91, 0.10);
+  }
+} 
